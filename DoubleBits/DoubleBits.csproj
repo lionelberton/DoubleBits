@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+	<LangVersion>latest</LangVersion>
+	<Authors>Lionel BERTON</Authors>
+    <AssemblyName>DoubleBits</AssemblyName>
+    <RootNamespace>DoubleBits</RootNamespace>
+    <TargetFrameworks>net5.0-windows</TargetFrameworks>
+    <AssemblyTitle>DoubleBits</AssemblyTitle>
+    <Product></Product>
+    <Description></Description>
+    <UseWPF>true</UseWPF>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+	<version>8.14.0</version>
+    <AssemblyVersion>8.14.0.0</AssemblyVersion>
+    <FileVersion>8.14.0</FileVersion>
+	<EnableNETAnalyzers>true</EnableNETAnalyzers>
+	<Copyright>Copyright © Lionel BERTON 2012-2021</Copyright>
+	<Platforms>AnyCPU</Platforms>
+    <Configurations>Debug;Release</Configurations>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+</Project>
