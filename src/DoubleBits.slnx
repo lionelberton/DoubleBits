@@ -1,0 +1,13 @@
+<Solution>
+  <Configurations>
+    <BuildType Name="Debug" />
+    <BuildType Name="Debug rapide" />
+    <BuildType Name="Release" />
+    <Platform Name="Any CPU" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="DoubleBits/DoubleBits.csproj">
+    <BuildType Solution="Debug rapide|*" Project="Debug" />
+    <Build Solution="*|x86" Project="false" />
+  </Project>
+</Solution>
